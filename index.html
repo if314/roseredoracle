@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rose Red Oracle — Tarot Readings</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lora:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Vintage, mystical tarot readings by Rose Red Oracle. Book a session for Single Card, 3-Card Intuitive, Moon Cycle, or Celtic Cross spreads.">
+</head>
+<body>
+  <header class="nav">
+    <a href="#hero" class="brand">Rose Red Oracle</a>
+    <nav>
+      <a href="#readings">Readings</a>
+      <a href="#about">About</a>
+      <a href="#faq">FAQ</a>
+      <a href="#booking" class="btn btn-small">Book a Session</a>
+    </nav>
+  </header>
+
+  <section id="hero" class="hero">
+    <div class="hero-inner">
+      <img src="img/logo.png" alt="Rose Red Oracle logo" class="logo">
+      <h1>Tarot • Intuition • Moon Magic</h1>
+      <p class="tagline">A vintage mystic experience in red & gold.</p>
+      <a href="#booking" class="btn btn-primary">Book a Session</a>
+    </div>
+  </section>
+
+  <section id="readings" class="section">
+    <div class="container">
+      <h2 class="section-title">Readings & Pricing</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Single Card Pull</h3>
+          <p class="price">$7</p>
+          <p class="desc">One clear message to illuminate your next step.</p>
+        </article>
+        <article class="card">
+          <h3>3-Card Intuitive Spread</h3>
+          <p class="price">$15</p>
+          <p class="desc">Past • Present • Path — concise guidance.</p>
+        </article>
+        <article class="card">
+          <h3>Moon Cycle Spread</h3>
+          <p class="price">$22</p>
+          <p class="desc">Align with lunar phases for clarity and timing.</p>
+        </article>
+        <article class="card">
+          <h3>Celtic Cross</h3>
+          <p class="price">$40</p>
+          <p class="desc">A classic, in-depth reading for complex questions.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section section-alt">
+    <div class="container two-col">
+      <div>
+        <h2 class="section-title">About Rose Red Oracle</h2>
+        <p>Rooted in intuition and ritual, Rose Red Oracle offers warm, grounded readings with a vintage aesthetic. Expect compassion, candor, and actionable insight — never doom, always direction.</p>
+        <ul class="bullets">
+          <li>Gentle, empowering guidance</li>
+          <li>Private and respectful sessions</li>
+          <li>Available for pop-ups, events, and private bookings</li>
+        </ul>
+      </div>
+      <div class="about-card">
+        <div class="seal">✨</div>
+        <p><strong>Ethos:</strong> Your path, your power. Cards are mirrors; you choose the next step.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="booking" class="section">
+    <div class="container">
+      <h2 class="section-title">Book a Session</h2>
+      <p class="center dim">Choose your reading and preferred time. You’ll receive a confirmation by email.</p>
+
+      <!-- Netlify-ready static form. Replace or integrate with another service if needed. -->
+      <form class="booking" name="booking" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="booking">
+        <div class="grid">
+          <label>Full Name
+            <input name="name" required placeholder="Your name">
+          </label>
+          <label>Email
+            <input type="email" name="email" required placeholder="you@example.com">
+          </label>
+          <label>Reading Type
+            <select name="reading" required>
+              <option value="Single Card Pull ($7)">Single Card Pull ($7)</option>
+              <option value="3-Card Intuitive ($15)">3-Card Intuitive ($15)</option>
+              <option value="Moon Cycle ($22)">Moon Cycle ($22)</option>
+              <option value="Celtic Cross ($40)">Celtic Cross ($40)</option>
+            </select>
+          </label>
+          <label>Preferred Date
+            <input type="date" name="date" required>
+          </label>
+          <label>Preferred Time
+            <input type="time" name="time" required>
+          </label>
+          <label>Notes
+            <textarea name="notes" rows="3" placeholder="Any context or focus for the reading…"></textarea>
+          </label>
+        </div>
+        <button class="btn btn-primary" type="submit">Request Booking</button>
+        <p class="center dim small">Prefer a link? Email <a href="mailto:hello@roseredoracle.com">hello@roseredoracle.com</a> or message on Instagram @roseredoracle.</p>
+      </form>
+    </div>
+  </section>
+
+  <section id="faq" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">FAQ</h2>
+      <details>
+        <summary>How long are sessions?</summary>
+        <p>Single and 3-card readings are ~10–15 minutes. Moon Cycle and Celtic Cross are ~25–35 minutes.</p>
+      </details>
+      <details>
+        <summary>Do you offer virtual readings?</summary>
+        <p>Yes — indicate “virtual” in your notes and you’ll receive a secure video link.</p>
+      </details>
+      <details>
+        <summary>How do I pay?</summary>
+        <p>Cash, card, or mobile pay at the time of the session. Pre-pay links available upon request.</p>
+      </details>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Rose Red Oracle</div>
+      <div class="dots">•</div>
+      <div><a href="#booking">Book a Session</a></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
