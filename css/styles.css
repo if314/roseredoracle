@@ -34,7 +34,7 @@ a{color:var(--gold)}
   radial-gradient(600px 360px at 50% 0%, rgba(214,177,93,.10), transparent 60%),
   linear-gradient(180deg, rgba(0,0,0,.25), rgba(0,0,0,.6)), var(--bg);}
 .hero-inner{display:grid;gap:16px;justify-items:center;text-align:center}
-.logo{border-radius:14px;box-shadow:0 10px 40px rgba(0,0,0,.55),0 0 0 2px rgba(214,177,93,.25)}
+.logo{width: 30%;}
 .hero-title{font-family:'Cinzel',serif;margin:6px 0}
 .tagline{color:var(--muted);margin-bottom:8px}
 
