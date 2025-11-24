@@ -108,7 +108,7 @@ a{color:var(--gold);}
   max-width:22rem;            /* but not crazy wide */
   padding:12px 18px;
   border-radius:999px;
-  border:1px solid rgba(214,177,93,.4);
+  border:1px solid var(--highlight);
   font-size:1rem;
   font-weight:500;
   text-align:center;
@@ -118,15 +118,15 @@ a{color:var(--gold);}
 }
 
 .btn-cta{
-  background:var(--gold);
+  background:var(--highlight);
   color:#35190a;
-  border-color:var(--gold);
+  border-color:var(--highlight);
   font-weight:700;
 }
 
 .btn-cta:hover,
 .btn-cta:focus-visible{
-  background:#e3c373;
+  background:(--highlight);
   transform:translateY(-1px);
   box-shadow:0 6px 18px rgba(0,0,0,.35);
 }
